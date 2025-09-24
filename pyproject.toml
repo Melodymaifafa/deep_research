@@ -32,9 +32,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/deep_research"
-Repository = "https://github.com/yourusername/deep_research.git"
-Issues = "https://github.com/yourusername/deep_research/issues"
+Homepage = "https://github.com/Melodymaifafa/deep_research"
+Repository = "https://github.com/Melodymaifafa/deep_research.git"
+Issues = "https://github.com/Melodymaifafa/deep_research/issues"
 
 [project.scripts]
 deep-research = "deep_research.deep_research:main"
