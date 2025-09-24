@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deep-research"
+version = "1.0.0"
+description = "A multi-agent research system that automatically conducts comprehensive research"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Deep Research Team"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "gradio>=4.0.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "openai>=1.0.0",
+    "agents"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/deep_research"
+Repository = "https://github.com/yourusername/deep_research.git"
+Issues = "https://github.com/yourusername/deep_research/issues"
+
+[project.scripts]
+deep-research = "deep_research.deep_research:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
